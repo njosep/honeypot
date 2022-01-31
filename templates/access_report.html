@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <style>
+    h1 {
+      color: blue;
+      font-family: verdana;
+      font-size: 150%;
+      text-align: center;
+    }
+
+    h2 {
+      color: rgb(19, 19, 211);
+      font-family: verdana;
+      font-size: 100%;
+      text-align: left;
+    }
+    h3 {
+      color: rgb(78, 78, 228);
+      font-family: verdana;
+      font-size: 100%;
+      text-align: left;
+    }
+
+    table {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    thead th,
+    tfoot th {
+      font-family: 'verdana';
+    }
+
+    th {
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    td {
+      letter-spacing: 1px;
+    }
+
+    tbody td {
+      text-align: center;
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    #title {
+      background-color: #488b77;
+      height: 8%;
+      text-align: center;
+      overflow: hidden;
+    }
+  </style>
+
+  <title>{{page_title_text}}</title>
+</head>
+
+<body>
+  <div id='title' align="center">
+    <h1>{{title_text}}</h1>
+  </div>
+  <h2>{{ftp_access_text}}</h2>
+  <h2>{{ftp_access_report.to_html()}}</h2>>
+  <h3>{{port_scan_text}}</h3>
+  <h3>{{port_scan_report.to_html()}}</h3>>
+  <h3>{{ping_check_text}}</h3>
+  <h3>{{ping_check_report.to_html()}}</h3>>
+</body>
+
+</html>
